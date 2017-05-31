@@ -1,0 +1,23 @@
+{
+  "name": "webminer",
+  "version": "1.0.0",
+  "description": "a crawler for practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunui/webMiner.git"
+  },
+  "author": "sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunui/webMiner/issues"
+  },
+  "homepage": "https://github.com/sunui/webMiner#readme",
+  "dependencies": {
+    "crawler": "^1.0.5",
+    "moment": "^2.18.1"
+  }
+}
