@@ -2,6 +2,7 @@ var fs      = require('fs');
 var moment  = require('moment');
 var Crawler = require('crawler');
 
+var indexUrl="http://vision.xitek.com/vision/figure/201704/14-223178.html"
 var dataDir     = "data/";
 var thisTimeDir = dataDir + moment().format("YYYYMMDDHHmmss");
 var imagesDir   = thisTimeDir + "/images";
@@ -18,9 +19,9 @@ function prepareDirs() {
 }
 
 function prepareURIs() {
-    uris.push("http://vision.xitek.com/vision/figure/201704/05-222442.html");
-    for(var i = 2; i < 51; i++) {
-        uris.push("http://vision.xitek.com/vision/figure/201704/05-222442_" + i + ".html");
+    uris.push(indexUrl);
+    for(var i = 2; i < 46; i++) {
+        uris.push(indexUrl.replace(".html","_"+i+".html"));
     }
 }
 
